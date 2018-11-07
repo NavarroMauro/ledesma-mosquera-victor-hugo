@@ -1,20 +1,72 @@
 footer {
-    div {
-        display: flex;
-        flex-grow: 1;
-        
-        div {
-            display: inline;
-            width: 50vw;
-            flex-wrap: wrap;
-            border: 1px dotted black;
-            &:nth-of-type(2) {
-                height: 40vw;
+    // border: 1px solid black;
+    border-top: 1px solid black;
+    display: flex;
+    flex-grow: 0;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+    width: 80vw;
+
+    div.contacto {
+        margin: 0 auto;
+        // width: auto;
+
+        form {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: space-around;
+            width: 30vw;
+
+            h2 {
+                text-align: center;
+                font-size: 2vw;
+                padding-bottom: 1vw;
+            }
+
+            input {
+
+                padding: .5vw;
+                width: 100%;
+                border: .5px solid darkgray;
+                border-radius: 5px;
+                margin-bottom: 1.5vw;
+                &::placeholder {
+                    font-size: 1.5vw;
+                } 
+            }
+
+            textarea {
+                width: 100%;
+                height: 10vw;
+                padding: .5vw;
+                border: .5px solid darkgray;
+                border-radius: 5px;
+                margin-bottom: 2vw;
+                &::placeholder { 
+                    font-size: 1.5vw;
+                }
+            }
+            button {
+                background: white;
+                border-radius: 5px;
+                padding: .2vw 0;
+                font-size: 2vw;
             }
         }
-        &:nth-of-type(2) {
-            border: 1px dotted black;
-            height: 5vw;
+    }
+
+    div#container-map {
+        height: 30vw;
+        width: 30vw;
+        margin: 0 auto;
+
+        div#map {
+            border-radius: 2vw;
+            height: 100%;
+            width: 100%;
         }
     }
 }
