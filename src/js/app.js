@@ -6,8 +6,6 @@
 // From here start the javascript animation
 
 let names = document.querySelectorAll('svg > g > g > path');
-console.log(names);
-
 
 
 for (let i = 0; i < names.length; i++) {
@@ -15,10 +13,9 @@ for (let i = 0; i < names.length; i++) {
     names[i].style.strokeDasharray = length + ' ' + length;
     names[i].style.strokeDashoffset = length;
     names[i].getBoundingClientRect();
-    names[i].style.transition = 'stroke-dashoffset 2s ease-in-out';
+    names[i].style.transition = 'stroke-dashoffset 3s ease-in-out';
     names[i].style.strokeDashoffset = '0';
 };
-
 
 
 // From here start the leaflet map

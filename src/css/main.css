@@ -85,30 +85,25 @@ header nav ul.social li a svg:hover {
 }
 
 footer {
-  border-top: 1px solid black;
+  border-top: 1px solid darkgray;
+  padding: 3vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 0;
-      -ms-flex-positive: 0;
-          flex-grow: 0;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin: 0 auto;
+  margin: 10vw auto;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   width: 80vw;
 }
 
 footer div.contacto {
-  margin: 0 auto;
+  margin-right: 3vw;
+  width: 100%;
 }
 
 footer div.contacto form {
+  border: 1px solid black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -116,13 +111,8 @@ footer div.contacto form {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: space-around;
-      -ms-flex-align: space-around;
-          align-items: space-around;
-  width: 30vw;
+  width: 100%;
+  height: 100%;
 }
 
 footer div.contacto form h2 {
@@ -136,7 +126,7 @@ footer div.contacto form input {
   width: 100%;
   border: .5px solid darkgray;
   border-radius: 5px;
-  margin-bottom: 1.5vw;
+  margin-bottom: .8vw;
 }
 
 footer div.contacto form input::-webkit-input-placeholder {
@@ -185,11 +175,13 @@ footer div.contacto form button {
   border-radius: 5px;
   padding: .2vw 0;
   font-size: 2vw;
+  margin: 2vw 2vw;
 }
 
 footer div#container-map {
   height: 30vw;
-  width: 30vw;
+  width: 100%;
+  min-width: 300px;
   margin: 0 auto;
 }
 
