@@ -85,25 +85,15 @@ header nav ul.social li a svg:hover {
 }
 
 footer {
-  border-top: 1px solid darkgray;
-  padding: 3vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin: 10vw auto;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   width: 80vw;
 }
 
-footer div.contacto {
-  margin-right: 3vw;
-  width: 100%;
-}
-
-footer div.contacto form {
-  border: 1px solid black;
+footer form {
+  margin-right: 2vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -115,13 +105,13 @@ footer div.contacto form {
   height: 100%;
 }
 
-footer div.contacto form h2 {
+footer form h2 {
   text-align: center;
   font-size: 2vw;
   padding-bottom: 1vw;
 }
 
-footer div.contacto form input {
+footer form input {
   padding: .5vw;
   width: 100%;
   border: .5px solid darkgray;
@@ -129,23 +119,23 @@ footer div.contacto form input {
   margin-bottom: .8vw;
 }
 
-footer div.contacto form input::-webkit-input-placeholder {
+footer form input::-webkit-input-placeholder {
   font-size: 1.5vw;
 }
 
-footer div.contacto form input:-ms-input-placeholder {
+footer form input:-ms-input-placeholder {
   font-size: 1.5vw;
 }
 
-footer div.contacto form input::-ms-input-placeholder {
+footer form input::-ms-input-placeholder {
   font-size: 1.5vw;
 }
 
-footer div.contacto form input::placeholder {
+footer form input::placeholder {
   font-size: 1.5vw;
 }
 
-footer div.contacto form textarea {
+footer form textarea {
   width: 100%;
   height: 10vw;
   padding: .5vw;
@@ -154,23 +144,23 @@ footer div.contacto form textarea {
   margin-bottom: 2vw;
 }
 
-footer div.contacto form textarea::-webkit-input-placeholder {
+footer form textarea::-webkit-input-placeholder {
   font-size: 1.5vw;
 }
 
-footer div.contacto form textarea:-ms-input-placeholder {
+footer form textarea:-ms-input-placeholder {
   font-size: 1.5vw;
 }
 
-footer div.contacto form textarea::-ms-input-placeholder {
+footer form textarea::-ms-input-placeholder {
   font-size: 1.5vw;
 }
 
-footer div.contacto form textarea::placeholder {
+footer form textarea::placeholder {
   font-size: 1.5vw;
 }
 
-footer div.contacto form button {
+footer form button {
   background: white;
   border-radius: 5px;
   padding: .2vw 0;

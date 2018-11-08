@@ -1,18 +1,16 @@
 <footer>
-  <div class="contacto">
+  <form name="contact" method="POST" netlify>
+    <h2>Contacto</h2>
+    <input type="text" maxlength="40" name="name" placeholder="Tu Nombre" required />
+    <input type="email" name="email" placeholder="Tu e-mail" required />
+    <textarea name="message" placeholder="Escribe aqui tu mensaje"></textarea>
 
-    <form name="contact" method="POST" netlify>
-      <h2>Contacto</h2>
-      <input type="text" maxlength="40" name="name" placeholder="Tu Nombre" required />
-      <input type="email" name="email" placeholder="Tu e-mail" required />
-      <textarea name="message" placeholder="Escribe aqui tu mensaje"></textarea>
+    <div>
+      <div data-netlify-recaptcha></div>
+    </div>
+    <button type="submit">Enviar</button>
+  </form>
 
-      <div>
-        <div data-netlify-recaptcha></div>
-      </div>
-      <button type="submit">Enviar</button>
-    </form>
-  </div>
 
   <div id="container-map">
     <div id="map"></div>

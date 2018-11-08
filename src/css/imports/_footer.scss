@@ -1,57 +1,55 @@
 footer {
-    border-top: 1px solid darkgray;
-    padding: 3vw;
+    // border: 1px solid darkgray;
     display: flex;
     margin: 10vw auto;
-    align-items: center;
     width: 80vw;
 
-    div.contacto {
-        margin-right: 3vw;
+    form {
+        margin-right: 2vw;
+        // border: 1px solid black;
+        display: flex;
+        flex-direction: column;
         width: 100%;
-        form {
-            border: 1px solid black;
-            display: flex;
-            flex-direction: column;
+        height: 100%;
+
+        h2 {
+            text-align: center;
+            font-size: 2vw;
+            padding-bottom: 1vw;
+        }
+
+        input {
+
+            padding: .5vw;
             width: 100%;
-            height: 100%;
+            border: .5px solid darkgray;
+            border-radius: 5px;
+            margin-bottom: .8vw;
 
-            h2 {
-                text-align: center;
-                font-size: 2vw;
-                padding-bottom: 1vw;
+            &::placeholder {
+                font-size: 1.5vw;
             }
+        }
 
-            input {
+        textarea {
+            width: 100%;
+            height: 10vw;
+            padding: .5vw;
+            border: .5px solid darkgray;
+            border-radius: 5px;
+            margin-bottom: 2vw;
 
-                padding: .5vw;
-                width: 100%;
-                border: .5px solid darkgray;
-                border-radius: 5px;
-                margin-bottom: .8vw;
-                &::placeholder {
-                    font-size: 1.5vw;
-                } 
+            &::placeholder {
+                font-size: 1.5vw;
             }
+        }
 
-            textarea {
-                width: 100%;
-                height: 10vw;
-                padding: .5vw;
-                border: .5px solid darkgray;
-                border-radius: 5px;
-                margin-bottom: 2vw;
-                &::placeholder { 
-                    font-size: 1.5vw;
-                }
-            }
-            button {
-                background: white;
-                border-radius: 5px;
-                padding: .2vw 0;
-                font-size: 2vw;
-                margin: 2vw 2vw;
-            }
+        button {
+            background: white;
+            border-radius: 5px;
+            padding: .2vw 0;
+            font-size: 2vw;
+            margin: 2vw 2vw;
         }
     }
 
