@@ -3,19 +3,17 @@
 // Say hello
 // console.log("🦊 Hello! Edit me in src/js/app.js");
 
-// From here start the javascript animation
+// From here start the title javascript animation (snapsvg)
+const title = document.querySelector('svg.title');
 
-let names = document.querySelectorAll('svg > g > g > path');
+// console.log(words[0]);
+
+let path = Snap(title);
+console.log(path);
 
 
-for (let i = 0; i < names.length; i++) {
-    const length = names[i].getTotalLength();
-    names[i].style.strokeDasharray = length + ' ' + length;
-    names[i].style.strokeDashoffset = length;
-    names[i].getBoundingClientRect();
-    names[i].style.transition = 'stroke-dashoffset 3s ease-in-out';
-    names[i].style.strokeDashoffset = '0';
-};
+
+
 
 
 // From here start the leaflet map

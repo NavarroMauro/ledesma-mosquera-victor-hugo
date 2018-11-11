@@ -3,29 +3,48 @@ header {
   margin-bottom: 2vw;
   margin: 0 auto 2vw auto;
   // border: 1px solid black;
-
   div {
     // border: 1px solid black;
     display: flex;
     justify-content: flex-start;
     align-items: center;
 
-    svg {
-      // border: 1px solid black;
+    svg.title {
+      // border: 1px solid rgb(160, 48, 48);
+      // margin: 2vw auto;
       margin: 0 auto;
-      width: 60vw;
-      // g {
-      //   path.carlos {
-      //     stroke-dasharray: 1000;
-      //     stroke-dashoffset: 1000;
-      //     animation: dash 5s linear forwards;
-      //   }
-      //   @keyframes dash {
-      //     to {
-      //       stroke-dashoffset: 0;
-      //     }
-      //   }
-      // }
+      width: 100%;
+      height: 25vh;
+      stroke: rgb(207, 15, 15);
+      stroke-width:.15em;
+      fill:none;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-dasharray: 1700;
+      stroke-dashoffset: 1700;
+      
+      @-webkit-keyframes dash {
+        to {
+          stroke-dashoffset: 0;
+        }
+      }
+      @keyframes dash {
+        to {
+          stroke-dashoffset: 0;
+        }
+      }
+      path.carlos {
+        -webkit-animation: dash 5s linear;
+        animation: dash 5s linear forwards;
+      }
+      path.ledesma {
+        -webkit-animation: dash 7s 2s linear;
+        animation: dash 7s 2s linear forwards;
+      }
+      path.mosquera {
+        -webkit-animation: dash 7s 5.5s linear;
+        animation: dash 7s 5.5s linear forwards;
+      }
     }
   }
 
@@ -40,7 +59,7 @@ header {
     ul.menu {
       list-style: none;
       display: flex;
-      // justify-content: space-evenly;
+      justify-content: space-between;
       align-items: center;
 
       li {
@@ -53,10 +72,15 @@ header {
           color: #070707;
           text-decoration: none;
           font-size: 1.8vw;
-          &:hover {
-            background: black;
-            color: white;
-          }
+          padding: 1vw;
+          -webkit-transition: width .5s; /* For Safari 3.1 to 6.0 */
+          transition: all 1s;
+            &:hover {
+              background: rgb(207, 15, 15);
+              color: white;
+              fill: white;
+              font-weight: 900;
+            }
         }
       }
     }
@@ -69,13 +93,26 @@ header {
           svg {
             border-radius: 50%;
             width: 5vw;
+            -webkit-transition: width .5s; /* For Safari 3.1 to 6.0 */
+            transition: all 1s;
             &:hover {
-              background: black;
+              background: rgb(207, 15, 15);
               fill: white;
             }
+            path {
+              
+            }
+          }
+          &:hover {
+
           }
         }
       }
     }
   }
 }
+
+
+
+
+                    
