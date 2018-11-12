@@ -12,6 +12,8 @@ header {
     svg.title {
       // border: 1px solid rgb(160, 48, 48);
       // margin: 2vw auto;
+      // display: flex;
+      flex-direction: row;
       margin: 0 auto;
       width: 100%;
       height: 25vh;
@@ -68,18 +70,17 @@ header {
         // text-align: center;
 
         a {
-          // padding: 1vw;
           color: #070707;
+          border: 2px solid white;
           text-decoration: none;
           font-size: 1.8vw;
-          padding: 1vw;
-          -webkit-transition: width .5s; /* For Safari 3.1 to 6.0 */
-          transition: all 1s;
+          padding: .5vw;
+          -webkit-transition: all 2s cubic-bezier(.5, 1, 0, 1); /* For Safari 3.1 to 6.0 */
+          transition: all 2s cubic-bezier(.5, 1, 0, 1);
             &:hover {
-              background: rgb(207, 15, 15);
-              color: white;
-              fill: white;
-              font-weight: 900;
+              border: 2px solid rgb(207, 15, 15);
+
+              // font-weight: 900;
             }
         }
       }
@@ -92,12 +93,15 @@ header {
         a {
           svg {
             border-radius: 50%;
+            fill: black;
+            border: 2px solid white;
             width: 5vw;
-            -webkit-transition: width .5s; /* For Safari 3.1 to 6.0 */
-            transition: all 1s;
+            -webkit-transition: all 2s; /* For Safari 3.1 to 6.0 */
+            transition: all 2s;
+            
             &:hover {
-              background: rgb(207, 15, 15);
-              fill: white;
+              border: 2px solid rgb(207, 15, 15);
+              fill: rgb(207, 15, 15);
             }
             path {
               
