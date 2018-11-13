@@ -1,0 +1,17 @@
+section#main {
+    margin: 0 auto 2vw auto;
+    width: 80%;
+    line-height: 2.5vw;
+}
+
+aside {
+    margin: 0 auto;
+    width: 80%;
+    div {
+        margin-bottom: 2vw;
+    }
+    div#arrows {
+        display: flex;
+        justify-content: space-between;
+    }
+}

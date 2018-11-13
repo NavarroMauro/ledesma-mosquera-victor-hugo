@@ -1,7 +1,8 @@
 ---
-title: "First"
+title: "Welcome"
 date: 2018-11-13T09:25:55+01:00
 draft: false
+featured_image: "cooking.jpg"
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tempor orci dapibus ultrices in iaculis nunc sed augue. At urna condimentum mattis pellentesque. Id semper risus in hendrerit gravida. Velit scelerisque in dictum non consectetur a erat nam at. Mattis enim ut tellus elementum sagittis vitae et leo duis. Faucibus turpis in eu mi bibendum neque. Erat imperdiet sed euismod nisi porta. Sed libero enim sed faucibus turpis in eu. Neque aliquam vestibulum morbi blandit cursus risus at ultrices. Id porta nibh venenatis cras sed felis. Tellus pellentesque eu tincidunt tortor aliquam nulla facilisi. Maecenas sed enim ut sem viverra aliquet eget. Adipiscing tristique risus nec feugiat in fermentum. Elementum tempus egestas sed sed risus. Malesuada proin libero nunc consequat. Vel fringilla est ullamcorper eget. Turpis egestas sed tempus urna et pharetra pharetra.
