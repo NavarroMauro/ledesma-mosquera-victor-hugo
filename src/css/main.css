@@ -34,12 +34,18 @@ header div svg.title {
 }
 
 @-webkit-keyframes dash {
+  from {
+    stroke-dashoffset: 1700;
+  }
   to {
     stroke-dashoffset: 0;
   }
 }
 
 @keyframes dash {
+  from {
+    stroke-dashoffset: 1700;
+  }
   to {
     stroke-dashoffset: 0;
   }

@@ -5,7 +5,7 @@
 
 // From here start the title javascript animation (snapsvg)
 const title = document.querySelector('svg.title');
-
+ 
 // console.log(words[0]);
 
 let path = Snap(title);
