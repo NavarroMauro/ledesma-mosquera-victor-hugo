@@ -241,7 +241,9 @@ footer div#container-map div#map {
 section#main {
   margin: 0 auto 2vw auto;
   width: 80%;
-  line-height: 2.5vw;
+  height: auto;
+  line-height: 4.5vw;
+  font-size: 2.5vw;
 }
 
 aside {
@@ -262,8 +264,45 @@ aside div#arrows {
           justify-content: space-between;
 }
 
-main {
-  margin: 0 auto;
+article {
+  margin: 3vw auto 3vw auto;
   width: 80%;
+}
+
+article h2 {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+article div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+article div article {
+  margin-left: 1.5vw;
+}
+
+article div img {
+  width: 15vw;
+}
+
+article ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+article ul li img {
+  width: 100%;
 }
 /*# sourceMappingURL=main.css.map */

@@ -2,7 +2,12 @@
 <section id="main">
   <h1 id="title">{{ .Title }}</h1>
   <div>
-      <article id="content">
+
+
+
+      <img{{ with .Params.featured_image }} src="{{ . }}"{{ end }} alt="{{ .Title }}">
+
+    <article id="content">
       {{ .Content }}
     </article>
   </div>

@@ -2,6 +2,17 @@ baseurl = "/"
 languageCode = "en-us"
 title = "Carlos Ledesma Mosquera"
 
+
+# Does the content use source code highlighting?
+highlight = false
+
+
+# Featured image thumbnail (optional)
+image_preview = ""
+
+relativeURLs = true
+canonifyURLs = true
+
 # RSS, categories and tags disabled for an easy start
 # See configuration options for more details: 
 # https://gohugo.io/getting-started/configuration/#toml-configuration

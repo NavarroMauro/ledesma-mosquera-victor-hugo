@@ -1,10 +1,35 @@
-main {
-    margin: 0 auto;
+article {
+    margin: 3vw auto 3vw auto;
     width: 80%;
-    article {
-        header {
-            h1 {
+    h2 {
+        display: inline-flex;
+        justify-content: space-around;
+        a {
+            
+        }
+        p {
 
+        }
+    }
+    
+    div {
+        display: flex;
+        align-items: center;
+        article {
+            margin-left: 1.5vw;
+        }
+        img {
+            width: 15vw;
+        }
+    }
+    ul {
+        li {
+            display: flex;
+            flex-shrink: 0;
+            img {
+                width: 100%;
+            }
+            a {
             }
         }
     }
