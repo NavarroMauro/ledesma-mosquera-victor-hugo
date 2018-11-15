@@ -37,3 +37,19 @@ L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/watercolor/{z}/{x}/{y}.{e
     scrollWheelZoom: false,
     zoomControl: false,
 }).addTo(map);
+
+
+//CONTACT FORM VALIDATION
+
+let userName = document.querySelector('input[name="name"]');
+let userEmail = document.querySelector('input[name="email"]');
+let userMessage = document.querySelector('textarea');
+let enviarButton = document.querySelector('button');
+
+
+let dataFromUser = 'It is here Mauro';
+let myRegex = /^mauro$/i;
+
+console.log(typeof(myRegex));
+
+console.log(myRegex.test(dataFromUser));
