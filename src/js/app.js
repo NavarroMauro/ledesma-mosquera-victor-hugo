@@ -5,18 +5,25 @@
 
 // From here start the title javascript animation (snapsvg)
 const title = document.querySelector('svg.title');
- 
-// console.log(words[0]);
 
 let path = Snap(title);
-console.log(path);
 
 
+// FOCUS IN THE CURRENT BARMENU
+const links = document.querySelectorAll('.link');
+
+links.forEach(anchor => {
+    anchor.addEventListener('click', addActive);
+})
+
+function addActive(addAct) {
+    const current = document.querySelector('.active');
+    current.className = current.className.replace("active", "");
+    addAct.target.className += "active";
+}
 
 
-
-
-// From here start the leaflet map
+// FROM HERE START THE LOCATION MAP
 const map = L.map('map', {
     scrollWheelZoom: false
 }).setView([53.550303, 9.992291], 10);
@@ -30,7 +37,3 @@ L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/watercolor/{z}/{x}/{y}.{e
     scrollWheelZoom: false,
     zoomControl: false,
 }).addTo(map);
-
-// L.marker([53.550303, 9.992291]).addTo(map)
-//     .bindPopup('HAMBURG')
-//     .openPopup();

@@ -2,10 +2,11 @@ article {
     margin: 3vw auto 3vw auto;
     width: 80%;
     h2 {
-        display: inline-flex;
-        justify-content: space-around;
+        display: flex;
+        justify-content: space-between;
         a {
-            
+            text-decoration: none;
+            color: #000;
         }
         p {
 
@@ -16,10 +17,11 @@ article {
         display: flex;
         align-items: center;
         article {
-            margin-left: 1.5vw;
+            margin-left: 3.5vw;
         }
         img {
             width: 15vw;
+            border-radius: 25px;
         }
     }
     ul {

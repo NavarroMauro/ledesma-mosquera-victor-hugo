@@ -98,14 +98,18 @@ header nav ul.menu li a {
   color: #070707;
   border: 2px solid white;
   text-decoration: none;
-  font-size: 1.8vw;
+  font-size: 1.2em;
   padding: .5vw;
-  -webkit-transition: all 2s cubic-bezier(0.5, 1, 0, 1);
+  -webkit-transition: border 1s cubic-bezier(0.5, 1, 0, 1);
   /* For Safari 3.1 to 6.0 */
-  transition: all 2s cubic-bezier(0.5, 1, 0, 1);
+  transition: border 1s cubic-bezier(0.5, 1, 0, 1);
 }
 
 header nav ul.menu li a:hover {
+  border: 2px solid #cf0f0f;
+}
+
+header nav ul.menu li a.active {
   border: 2px solid #cf0f0f;
 }
 
@@ -121,9 +125,9 @@ header nav ul.social li a svg {
   fill: black;
   border: 2px solid white;
   width: 5vw;
-  -webkit-transition: all 2s;
+  -webkit-transition: all 1s;
   /* For Safari 3.1 to 6.0 */
-  transition: all 2s;
+  transition: all 1s;
 }
 
 header nav ul.social li a svg:hover {
@@ -270,11 +274,17 @@ article {
 }
 
 article h2 {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+article h2 a {
+  text-decoration: none;
+  color: #000;
 }
 
 article div {
@@ -287,11 +297,12 @@ article div {
 }
 
 article div article {
-  margin-left: 1.5vw;
+  margin-left: 3.5vw;
 }
 
 article div img {
   width: 15vw;
+  border-radius: 25px;
 }
 
 article ul li {
