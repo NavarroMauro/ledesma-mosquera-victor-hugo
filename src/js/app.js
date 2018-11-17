@@ -3,13 +3,12 @@
 // Say hello
 // console.log("🦊 Hello! Edit me in src/js/app.js");
 
-// From here start the title javascript animation (snapsvg)
+// From here start the title javascript animation from the title (snapsvg)
 const title = document.querySelector('svg.title');
-
 let path = Snap(title);
 
 
-// FOCUS IN THE CURRENT BARMENU
+// HIGHTLIGHT BUTTON MENU FROM CURRENT SECTION
 const links = document.querySelectorAll('.link');
 
 links.forEach(anchor => {
@@ -47,8 +46,8 @@ let userMessage = document.querySelector('textarea');
 let enviarButton = document.querySelector('button');
 
 
-let dataFromUser = 'It is here Mauro';
-let myRegex = /^mauro$/i;
+let dataFromUser = 'tu madre';
+let myRegex = /^\n{4}\-/i;
 
 console.log(typeof(myRegex));
 

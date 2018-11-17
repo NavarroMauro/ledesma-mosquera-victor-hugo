@@ -1,38 +1,29 @@
 article {
     margin: 3vw auto 3vw auto;
-    width: 80%;
+
+    // From here on came the title
     h2 {
-        display: flex;
-        justify-content: space-between;
+        font-size: 1em;
+        width: 80%;
+        margin: 0 auto;
         a {
             text-decoration: none;
             color: #000;
         }
         p {
-
+            font-size: .8em;
+            color: darkgray;
         }
     }
     
+    // From here on came image an article list
     div {
-        display: flex;
-        align-items: center;
-        article {
-            margin-left: 3.5vw;
-        }
         img {
-            width: 15vw;
-            border-radius: 25px;
-        }
-    }
-    ul {
-        li {
-            display: flex;
-            flex-shrink: 0;
-            img {
-                width: 100%;
-            }
-            a {
-            }
+            width: 100%;
+        }   
+        article {
+            width: 80%;
+            font-size: .9em;
         }
     }
 }
